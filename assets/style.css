@@ -1,0 +1,15 @@
+table {
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+thead {
+	background-color: #3f3f3f;
+	color: white;
+	position: sticky;
+	top: 0;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #eee;
+}
