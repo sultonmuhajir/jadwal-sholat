@@ -3,7 +3,7 @@ const tgl = new Date().toISOString().slice(0, 10).split("-");
 
 function jadwalSholat(kota) {
    const tittle = kota.charAt(0).toUpperCase() + kota.slice(1);
-   document.querySelector("h1").innerHTML = `${tittle} - ${tgl[1]}/${tgl[0]}`;
+   document.querySelector("h2").innerHTML = `${tittle} - ${tgl[1]}/${tgl[0]}`;
    fetch(`https://raw.githubusercontent.com/lakuapik/jadwalsholatorg/master/adzan/${kota}/${tgl[0]}/${tgl[1]}.json`)
       .then(res => res.json())
       .then(data => {

@@ -4,30 +4,37 @@
 <head>
    <meta charset="UTF-8">
    <title>Jadwal Sholat</title>
-   <link rel="stylesheet" href="assets/style.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
-   <center>
-      <select name="kota" id="kota"></select><br>
-      <h1></h1>
-      <table cellspacing="0" cellpadding="10">
-         <thead>
-            <th>Tanggal</th>
-            <th>Imsyak</th>
-            <th>Shubuh</th>
-            <th>Terbit</th>
-            <th>Dhuha</th>
-            <th>Dzuhur</th>
-            <th>Ashar</th>
-            <th>Maghrib</th>
-            <th>Isya</th>
-         </thead>
-         <tbody></tbody>
-      </table>
-   </center>
+   <div class="container text-center mt-3">
+      <div class="col-4 m-auto">
+         <select class="form-select" name="kota" id="kota"></select><br>
+      </div>
 
-   <script src="assets/script.js"></script>
+      <h2></h2>
+
+      <div class="col-md-7 mx-auto my-4 border border-dark">
+         <table class="table table-striped">
+            <thead class="table-dark sticky-top">
+               <th>Tanggal</th>
+               <th>Imsyak</th>
+               <th>Shubuh</th>
+               <th>Terbit</th>
+               <th>Dhuha</th>
+               <th>Dzuhur</th>
+               <th>Ashar</th>
+               <th>Maghrib</th>
+               <th>Isya</th>
+            </thead>
+            <tbody></tbody>
+         </table>
+      </div>
+   </div>
+
+   <script src="script.js"></script>
 </body>
 
 </html>
