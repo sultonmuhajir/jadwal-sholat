@@ -4,9 +4,9 @@ const body = document.querySelector("tbody");
 const select = document.querySelector("select");
 
 // Fungsi mengambil data jadwal sholat dari API
-function getJadwal(kota, tgl0, tgl1) {
+function getJadwal(kota, year, month) {
    return fetch(
-      `https://raw.githubusercontent.com/lakuapik/jadwalsholatorg/master/adzan/${kota}/${tgl0}/${tgl1}.json`
+      `https://raw.githubusercontent.com/lakuapik/jadwalsholatorg/master/adzan/${kota}/${year}/${month}.json`
    )
       .then((res) => res.json())
       .then((data) => data);
