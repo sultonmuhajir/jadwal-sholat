@@ -12,7 +12,7 @@ function getJadwal(kota, tgl0, tgl1) {
       .then((data) => data);
 }
 
-// Fungsi update UI
+// Fungsi menambahkan data ke list
 function dataJadwal(data) {
    let res = "";
    data.forEach((el) => {
